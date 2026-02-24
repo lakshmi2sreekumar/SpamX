@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpamX Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 250px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        #status {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .spam {
+            color: red;
+            font-weight: bold;
+        }
+
+        .ham {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>SpamX Detector</h2>
+
+<div id="status">Click analyze</div>
+
+<button id="analyzeBtn">Analyze Comments</button>
+
+<div id="results"></div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
